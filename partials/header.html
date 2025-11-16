@@ -1,0 +1,20 @@
+<!-- partials/header.html
+     Header used across pages. Use root-relative links so all pages can reference them.
+     Keep this file plain HTML; js/loadLayout.js will inject it into each page.
+-->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Epoxy Lovers</a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- mobile hamburger (JS will toggle) -->
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </div>
+</header>

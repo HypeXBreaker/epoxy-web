@@ -1,0 +1,52 @@
+/* main.css - home/preview styling */
+.site-header{background:transparent}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 0;
+}
+
+.brand{
+  font-weight:800;
+  font-size:20px;
+  color:var(--white);
+  text-decoration:none;
+}
+
+.main-nav ul{display:flex;gap:18px;align-items:center}
+.main-nav a{color:var(--muted);text-decoration:none}
+
+.nav-toggle{display:none}
+
+/* hero */
+.hero{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:60px 20px;
+}
+.hero-inner h1{font-size:42px;margin-bottom:12px}
+.hero-inner p{color:var(--muted);margin-bottom:18px}
+
+/* preview grid */
+.preview-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  overflow:hidden;
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,.6)}
+.card-media img{width:100%;height:180px;object-fit:cover;display:block}
+.card-body{padding:14px}
+.card-body h3{margin-bottom:6px}
+.card-body p{color:var(--muted);font-size:14px}

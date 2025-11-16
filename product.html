@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <link rel="stylesheet" href="assets/css/global.css">
+
+  <style>
+    .product-page {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-img {
+      width: 330px;
+      border-radius: 18px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .product-info {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .product-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff66cc;
+      text-shadow: 0 0 10px rgba(255,102,204,0.3);
+    }
+
+    .product-price {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 10px 0;
+      color: #6d2cff;
+    }
+
+    .buy-btn {
+      margin-top: 15px;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #ff66cc;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .buy-btn:hover {
+      transform: scale(1.05);
+      background: #ff84d6;
+    }
+  </style>
+</head>
+
+<body class="product_bg">
+
+  <div id="header"></div>
+
+  <main>
+    <section class="product-page">
+
+      <img id="p-image" class="product-img" src="" alt="">
+
+      <div class="product-info">
+        <h2 id="p-title" class="product-title"></h2>
+        <p id="p-desc"></p>
+        <div id="p-price" class="product-price"></div>
+
+        <button id="buy-btn" class="buy-btn">
+          Buy Now 💖
+        </button>
+      </div>
+
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="js/product.js"></script>
+
+</body>
+</html>
