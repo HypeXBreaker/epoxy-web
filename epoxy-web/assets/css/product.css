@@ -1,0 +1,49 @@
+/* assets/css/product.css
+   Styles for the single product page template.
+   Small and self-contained so nothing else needs touching.
+*/
+
+.product-page .product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  padding-top: 20px;
+}
+
+.product-media img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.6);
+}
+
+.product-info h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  color: var(--muted);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* meta */
+.product-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .product-page .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-media img { max-height: 360px; }
+}

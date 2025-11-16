@@ -1,0 +1,8 @@
+/* contact.css */
+.contact-main .contact-info, .contact-main .branches, .contact-main .credits{
+  background:var(--card);
+  padding:18px;
+  border-radius:10px;
+  margin-bottom:18px;
+}
+.contact-main a{color:var(--accent)}
